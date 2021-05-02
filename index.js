@@ -33,7 +33,7 @@ function activity() {
       if (err) {
         console.log(err);
       } else {
-        client.user.setActivity(" Joueurs connecté(e)s " + data.clients + "/" + data.maxclients, { type: configs.activityType });
+        client.user.setActivity(" En ligne : " + data.clients + "/" + data.maxclients, { type: configs.activityType });
       }
     });
     activity();
